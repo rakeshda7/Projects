@@ -39,9 +39,6 @@ int main()
     vs.push_back("123");
     vs.push_back("12345");
     vs.push_back("1234567");
-    vs.push_back("123");
-    vs.push_back("12345");
-    vs.push_back("1234567");
 
     cout<<"Cumulitive Cost is: "<<calculateCost(vs)<<endl;
 
