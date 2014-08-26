@@ -9,7 +9,6 @@ class Heap {
     vector<int> v;
     bool minHeap;
 
-    int getParentNodeIndex(int);
     void push_up(unsigned int index);
     void push_down(unsigned int index);
     bool isLesser(int x, int y);
