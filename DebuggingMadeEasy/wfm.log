@@ -1,0 +1,362 @@
+14-Jul-17 18:46:17.638 SEVE: gemriwfm.app.main.ui.controller.PETMRTaskListUI
+java.lang.ArrayIndexOutOfBoundsException: 5
+        at gemriwfm.components.session.MRTaskListSupport.doPaste(MRTaskListSupport.java:340)
+        at gemriwfm.components.session.MRSession.pasteTasks(MRSession.java:3025)
+        at gemriwfm.app.main.ui.controller.LinkManager.processPasteAction(LinkManager.java:191)
+        at gemriwfm.app.main.ui.controller.TaskListUi.duplicateItem(TaskListUi.java:1394)
+        at gemriwfm.app.main.ui.controller.TaskListUi.actionPerformed(TaskListUi.java:265)
+        at gemriwfm.app.main.ui.controller.PETMRTaskListUI.actionPerformed(PETMRTaskListUI.java:148)
+        at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+        at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+        at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+        at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+        at javax.swing.AbstractButton.doClick(Unknown Source)
+        at javax.swing.plaf.basic.BasicMenuItemUI.doClick(Unknown Source)
+        at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(Unknown Source)
+        at java.awt.Component.processMouseEvent(Unknown Source)
+        at javax.swing.JComponent.processMouseEvent(Unknown Source)
+        at java.awt.Component.processEvent(Unknown Source)
+        at java.awt.Container.processEvent(Unknown Source)
+        at java.awt.Component.dispatchEventImpl(Unknown Source)
+        at java.awt.Container.dispatchEventImpl(Unknown Source)
+        at java.awt.Component.dispatchEvent(Unknown Source)
+        at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+        at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+        at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+        at java.awt.Container.dispatchEventImpl(Unknown Source)
+        at java.awt.Window.dispatchEventImpl(Unknown Source)
+        at java.awt.Component.dispatchEvent(Unknown Source)
+        at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+        at java.awt.EventQueue.access$200(Unknown Source)
+        at java.awt.EventQueue$3.run(Unknown Source)
+        at java.awt.EventQueue$3.run(Unknown Source)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+        at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+        at java.awt.EventQueue$4.run(Unknown Source)
+        at java.awt.EventQueue$4.run(Unknown Source)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+        at java.awt.EventQueue.dispatchEvent(Unknown Source)
+        at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+        at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+        at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+        at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+        at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+        at java.awt.EventDispatchThread.run(Unknown Source)
+	    
+
+14-Jul-17 18:32:32.547 INFO: UIOp: Tabbed panel 0 was selected.
+14-Jul-17 18:32:32.554 INFO: UIOp: System automatically selecting first task.
+14-Jul-17 18:32:32.562 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:32:32.562 INFO: UIOp: User selected task (Whole Body Localizer) [row=0] {Whole Body Localizer}
+14-Jul-17 18:32:39.700 INFO: UIOp: New task added to session: {Station 1:Tsk1: }
+14-Jul-17 18:32:39.700 INFO: UIOp: New task added to session: {Station 2:Tsk2: }
+14-Jul-17 18:32:39.700 INFO: UIOp: New task added to session: {Station 3:Tsk3: }
+14-Jul-17 18:32:39.700 INFO: UIOp: New task added to session: {Station 4:Tsk4: }
+14-Jul-17 18:32:46.168 INFO: UIOp: User requested Scan action.
+14-Jul-17 18:32:49.556 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:32:49.556 INFO: UIOp: User selected task (PET Task) [row=3] {PET Task}
+14-Jul-17 18:32:50.868 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:33:16.473 INFO: UIOp: New task added to session: {Bed 2}
+14-Jul-17 18:33:16.473 INFO: UIOp: New task added to session: {Bed 3}
+14-Jul-17 18:33:16.474 INFO: UIOp: New task added to session: {Bed 4}
+14-Jul-17 18:33:16.474 INFO: UIOp: New task added to session: {Bed 5}
+14-Jul-17 18:33:16.474 INFO: UIOp: New task added to session: {Bed 6}
+14-Jul-17 18:33:16.474 INFO: UIOp: New task added to session: {}
+14-Jul-17 18:33:16.650 INFO: UIOp: New task added to session: {Bed 1}
+14-Jul-17 18:33:16.746 INFO: UIOp: New task added to session: {MRAC 1:Tsk25: }
+14-Jul-17 18:33:16.746 INFO: UIOp: New task added to session: {Cor T2 STIR 1-2:Tsk26: }
+14-Jul-17 18:33:16.746 INFO: UIOp: New task added to session: {Cor LAVA-Flex 1-2:Tsk27: }
+14-Jul-17 18:33:16.746 INFO: UIOp: New task added to session: {Ax DWI-1 multi b:Tsk28: }
+14-Jul-17 18:33:17.014 INFO: UIOp: New task added to session: {Bed 2}
+14-Jul-17 18:33:17.166 INFO: UIOp: New task added to session: {MRAC 2:Tsk29: }
+14-Jul-17 18:33:17.166 INFO: UIOp: New task added to session: {Ax DWI-2 Multi bvalue:Tsk30: }
+14-Jul-17 18:33:17.534 INFO: UIOp: New task added to session: {Bed 3}
+14-Jul-17 18:33:17.627 INFO: UIOp: New task added to session: {MRAC 3:Tsk31: }
+14-Jul-17 18:33:17.627 INFO: UIOp: New task added to session: {Cor T2 STIR RT 3-4:Tsk32: }
+14-Jul-17 18:33:17.628 INFO: UIOp: New task added to session: {Cor LAVA-Flex  3-4 BH:Tsk33: }
+14-Jul-17 18:33:17.628 INFO: UIOp: New task added to session: {Ax DWI-3 Multi bvalue:Tsk34: }
+14-Jul-17 18:33:17.872 INFO: UIOp: New task added to session: {Bed 4}
+14-Jul-17 18:33:17.961 INFO: UIOp: New task added to session: {MRAC 4:Tsk35: }
+14-Jul-17 18:33:17.961 INFO: UIOp: New task added to session: {Ax DWI-4  Multi bvalue:Tsk36: }
+14-Jul-17 18:33:18.288 INFO: UIOp: New task added to session: {Bed 5}
+14-Jul-17 18:33:18.401 INFO: UIOp: New task added to session: {MRAC 5:Tsk37: }
+14-Jul-17 18:33:18.401 INFO: UIOp: New task added to session: {Cor T2 STIR 5-6:Tsk38: }
+14-Jul-17 18:33:18.401 INFO: UIOp: New task added to session: {Cor LAVA-Flex 5-6:Tsk39: }
+14-Jul-17 18:33:18.401 INFO: UIOp: New task added to session: {Ax DWI-5  Multi bvalue:Tsk40: }
+14-Jul-17 18:33:18.745 INFO: UIOp: New task added to session: {Bed 6}
+14-Jul-17 18:33:18.838 INFO: UIOp: New task added to session: {MRAC 6:Tsk41: }
+14-Jul-17 18:33:18.838 INFO: UIOp: New task added to session: {Ax DWI-6  Multi bvalue:Tsk42: }
+14-Jul-17 18:33:25.091 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:33:25.091 INFO: UIOp: User selected task (Cor T2 STIR 1-2) [row=5] {Cor T2 STIR 1-2:Tsk26: }
+14-Jul-17 18:33:26.242 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:33:31.415 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:33:31.415 INFO: UIOp: User selected task (Cor LAVA-Flex 1-2) [row=6] {Cor LAVA-Flex 1-2:Tsk27: }
+14-Jul-17 18:33:32.543 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:33:37.517 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:33:37.518 INFO: UIOp: User selected task (Ax DWI-2 Multi bvalue) [row=9] {Ax DWI-2 Multi bvalue:Tsk30: }
+14-Jul-17 18:33:37.703 INFO: UIOp:   Row was double clicked.
+14-Jul-17 18:34:50.124 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:34:50.124 INFO: UIOp: User selected task (PET Task) [row=3] {PET Task}
+14-Jul-17 18:34:51.239 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:35:05.309 INFO: UIOp: New task added to session: {Bed 1}
+14-Jul-17 18:35:05.362 INFO: UIOp: New task added to session: {Cor T2 STIR 1-2:Tsk43: }
+14-Jul-17 18:35:05.362 INFO: UIOp: New task added to session: {Cor LAVA-Flex 1-2:Tsk44: }
+14-Jul-17 18:35:05.362 INFO: UIOp: New task added to session: {Ax DWI-1 multi b:Tsk45: }
+14-Jul-17 18:35:05.463 INFO: UIOp: New task added to session: {MRAC:Tsk46: }
+14-Jul-17 18:35:06.318 INFO: UIOp: New task added to session: {Bed 2}
+14-Jul-17 18:35:06.365 INFO: UIOp: New task added to session: {Ax DWI-2 Multi bvalue:Tsk47: }
+14-Jul-17 18:35:06.421 INFO: UIOp: New task added to session: {MRAC:Tsk48: }
+14-Jul-17 18:35:07.328 INFO: UIOp: New task added to session: {Bed 3}
+14-Jul-17 18:35:07.377 INFO: UIOp: New task added to session: {Cor T2 STIR RT 3-4:Tsk49: }
+14-Jul-17 18:35:07.377 INFO: UIOp: New task added to session: {Cor LAVA-Flex  3-4 BH:Tsk50: }
+14-Jul-17 18:35:07.377 INFO: UIOp: New task added to session: {Ax DWI-3 Multi bvalue:Tsk51: }
+14-Jul-17 18:35:07.441 INFO: UIOp: New task added to session: {MRAC:Tsk52: }
+14-Jul-17 18:35:08.297 INFO: UIOp: New task added to session: {Bed 4}
+14-Jul-17 18:35:08.347 INFO: UIOp: New task added to session: {Ax DWI-4  Multi bvalue:Tsk53: }
+14-Jul-17 18:35:08.404 INFO: UIOp: New task added to session: {MRAC:Tsk54: }
+14-Jul-17 18:35:09.409 INFO: UIOp: New task added to session: {Bed 5}
+14-Jul-17 18:35:09.458 INFO: UIOp: New task added to session: {Cor T2 STIR 5-6:Tsk55: }
+14-Jul-17 18:35:09.458 INFO: UIOp: New task added to session: {Cor LAVA-Flex 5-6:Tsk56: }
+14-Jul-17 18:35:09.459 INFO: UIOp: New task added to session: {Ax DWI-5  Multi bvalue:Tsk57: }
+14-Jul-17 18:35:09.513 INFO: UIOp: New task added to session: {MRAC:Tsk58: }
+14-Jul-17 18:35:10.446 INFO: UIOp: New task added to session: {Bed 6}
+14-Jul-17 18:35:10.496 INFO: UIOp: New task added to session: {Ax DWI-6  Multi bvalue:Tsk59: }
+14-Jul-17 18:35:10.555 INFO: UIOp: New task added to session: {MRAC:Tsk60: }
+14-Jul-17 18:35:11.406 INFO: UIOp: New task added to session: {}
+14-Jul-17 18:35:19.532 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:35:31.680 INFO: UIOp: New task added to session: {Bed 1       (04:00)}
+14-Jul-17 18:35:31.775 INFO: UIOp: New task added to session: {MRAC 1:Tsk61: }
+14-Jul-17 18:35:31.775 INFO: UIOp: New task added to session: {Cor T2 STIR 1-2:Tsk62: }
+14-Jul-17 18:35:31.775 INFO: UIOp: New task added to session: {Cor LAVA-Flex 1-2:Tsk63: }
+14-Jul-17 18:35:31.775 INFO: UIOp: New task added to session: {Ax DWI-1 multi b:Tsk64: }
+14-Jul-17 18:35:31.945 INFO: UIOp: New task added to session: {MRAC:Tsk65: }
+14-Jul-17 18:35:32.913 INFO: UIOp: New task added to session: {Bed 2}
+14-Jul-17 18:35:33.010 INFO: UIOp: New task added to session: {MRAC 2:Tsk66: }
+14-Jul-17 18:35:33.010 INFO: UIOp: New task added to session: {Ax DWI-2 Multi bvalue:Tsk67: }
+14-Jul-17 18:35:33.182 INFO: UIOp: New task added to session: {MRAC:Tsk68: }
+14-Jul-17 18:35:34.159 INFO: UIOp: New task added to session: {Bed 3}
+14-Jul-17 18:35:34.251 INFO: UIOp: New task added to session: {MRAC 3:Tsk69: }
+14-Jul-17 18:35:34.252 INFO: UIOp: New task added to session: {Cor T2 STIR RT 3-4:Tsk70: }
+14-Jul-17 18:35:34.252 INFO: UIOp: New task added to session: {Cor LAVA-Flex  3-4 BH:Tsk71: }
+14-Jul-17 18:35:34.252 INFO: UIOp: New task added to session: {Ax DWI-3 Multi bvalue:Tsk72: }
+14-Jul-17 18:35:34.469 INFO: UIOp: New task added to session: {MRAC:Tsk73: }
+14-Jul-17 18:35:35.381 INFO: UIOp: New task added to session: {Bed 4}
+14-Jul-17 18:35:35.468 INFO: UIOp: New task added to session: {MRAC 4:Tsk74: }
+14-Jul-17 18:35:35.469 INFO: UIOp: New task added to session: {Ax DWI-4  Multi bvalue:Tsk75: }
+14-Jul-17 18:35:35.634 INFO: UIOp: New task added to session: {MRAC:Tsk76: }
+14-Jul-17 18:35:36.637 INFO: UIOp: New task added to session: {Bed 5       (04:00)}
+14-Jul-17 18:35:36.724 INFO: UIOp: New task added to session: {MRAC 5:Tsk77: }
+14-Jul-17 18:35:36.725 INFO: UIOp: New task added to session: {Cor T2 STIR 5-6:Tsk78: }
+14-Jul-17 18:35:36.725 INFO: UIOp: New task added to session: {Cor LAVA-Flex 5-6:Tsk79: }
+14-Jul-17 18:35:36.725 INFO: UIOp: New task added to session: {Ax DWI-5  Multi bvalue:Tsk80: }
+14-Jul-17 18:35:36.881 INFO: UIOp: New task added to session: {MRAC:Tsk81: }
+14-Jul-17 18:35:37.880 INFO: UIOp: New task added to session: {Bed 6}
+14-Jul-17 18:35:37.968 INFO: UIOp: New task added to session: {MRAC 6:Tsk82: }
+14-Jul-17 18:35:37.968 INFO: UIOp: New task added to session: {Ax DWI-6  Multi bvalue:Tsk83: }
+14-Jul-17 18:35:38.128 INFO: UIOp: New task added to session: {MRAC:Tsk84: }
+14-Jul-17 18:35:39.060 INFO: UIOp: New task added to session: {}
+14-Jul-17 18:35:46.426 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:35:46.427 INFO: UIOp: User selected task (Cor T2 STIR 1-2) [row=6] {Cor T2 STIR 1-2:Tsk62: }
+14-Jul-17 18:35:47.587 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:35:55.556 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:35:55.556 INFO: UIOp: User selected task (Ax DWI-3 Multi bvalue) [row=16] {Ax DWI-3 Multi bvalue:Tsk72: }
+14-Jul-17 18:35:55.763 INFO: UIOp:   Row was double clicked.
+14-Jul-17 18:36:28.621 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:36:28.621 INFO: UIOp: User selected task (Ax DWI-4  Multi bvalue) [row=19] {Ax DWI-4  Multi bvalue:Tsk75: }
+14-Jul-17 18:36:28.640 INFO: UIOp:   Row was double clicked.
+14-Jul-17 18:36:40.344 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:36:41.837 INFO: UIOp: User requested MoveUpBed action.
+14-Jul-17 18:36:42.041 INFO: UIOp: New task added to session: {Ax DWI-4  Multi bvalue:Tsk85: }
+14-Jul-17 18:36:45.172 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:36:45.172 INFO: UIOp: User selected task (Ax DWI-4  Multi bvalue) [row=17] {Ax DWI-4  Multi bvalue:Tsk85: }
+14-Jul-17 18:37:42.100 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:37:42.100 INFO: UIOp: User selected task (Ax DWI-3 Multi bvalue) [row=16] {Ax DWI-3 Multi bvalue:Tsk72: }
+14-Jul-17 18:37:43.008 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:38:07.774 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:38:09.461 INFO: UIOp: User requested MoveUp action.
+14-Jul-17 18:38:11.508 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:38:13.725 INFO: UIOp: User requested MoveUpBed action.
+14-Jul-17 18:38:13.854 INFO: UIOp: New task added to session: {Ax DWI-3 Multi bvalue:Tsk86: }
+14-Jul-17 18:38:29.076 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:38:29.076 INFO: UIOp: User selected task (PET Task    (23:00)) [row=3] {PET Task}
+14-Jul-17 18:38:45.632 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:38:48.143 INFO: UIOp: New task added to session: {Bed 1       (04:00)}
+14-Jul-17 18:38:48.236 INFO: UIOp: New task added to session: {MRAC 1:Tsk87: }
+14-Jul-17 18:38:48.236 INFO: UIOp: New task added to session: {Cor T2 STIR 1-2:Tsk88: }
+14-Jul-17 18:38:48.236 INFO: UIOp: New task added to session: {Cor LAVA-Flex 1-2:Tsk89: }
+14-Jul-17 18:38:48.236 INFO: UIOp: New task added to session: {Ax DWI-1 multi b:Tsk90: }
+14-Jul-17 18:38:48.395 INFO: UIOp: New task added to session: {MRAC:Tsk91: }
+14-Jul-17 18:38:49.373 INFO: UIOp: New task added to session: {Bed 2       (03:00)}
+14-Jul-17 18:38:49.463 INFO: UIOp: New task added to session: {MRAC 2:Tsk92: }
+14-Jul-17 18:38:49.463 INFO: UIOp: New task added to session: {Ax DWI-2 Multi bvalue:Tsk93: }
+14-Jul-17 18:38:49.463 INFO: UIOp: New task added to session: {Ax DWI-3 Multi bvalue:Tsk94: }
+14-Jul-17 18:38:49.653 INFO: UIOp: New task added to session: {MRAC:Tsk95: }
+14-Jul-17 18:38:50.644 INFO: UIOp: New task added to session: {Bed 3       (04:00)}
+14-Jul-17 18:38:50.734 INFO: UIOp: New task added to session: {MRAC 3:Tsk96: }
+14-Jul-17 18:38:50.734 INFO: UIOp: New task added to session: {Cor T2 STIR RT 3-4:Tsk97: }
+14-Jul-17 18:38:50.734 INFO: UIOp: New task added to session: {Cor LAVA-Flex  3-4 BH:Tsk98: }
+14-Jul-17 18:38:50.734 INFO: UIOp: New task added to session: {Ax DWI-4  Multi bvalue:Tsk99: }
+14-Jul-17 18:38:50.900 INFO: UIOp: New task added to session: {MRAC:Tsk100: }
+14-Jul-17 18:38:51.837 INFO: UIOp: New task added to session: {Bed 4}
+14-Jul-17 18:38:51.927 INFO: UIOp: New task added to session: {MRAC 4:Tsk101: }
+14-Jul-17 18:38:52.093 INFO: UIOp: New task added to session: {MRAC:Tsk102: }
+14-Jul-17 18:38:53.172 INFO: UIOp: New task added to session: {Bed 5       (04:00)}
+14-Jul-17 18:38:53.265 INFO: UIOp: New task added to session: {MRAC 5:Tsk103: }
+14-Jul-17 18:38:53.265 INFO: UIOp: New task added to session: {Cor T2 STIR 5-6:Tsk104: }
+14-Jul-17 18:38:53.265 INFO: UIOp: New task added to session: {Cor LAVA-Flex 5-6:Tsk105: }
+14-Jul-17 18:38:53.265 INFO: UIOp: New task added to session: {Ax DWI-5  Multi bvalue:Tsk106: }
+14-Jul-17 18:38:53.456 INFO: UIOp: New task added to session: {MRAC:Tsk107: }
+14-Jul-17 18:38:54.410 INFO: UIOp: New task added to session: {Bed 6}
+14-Jul-17 18:38:54.499 INFO: UIOp: New task added to session: {MRAC 6:Tsk108: }
+14-Jul-17 18:38:54.500 INFO: UIOp: New task added to session: {Ax DWI-6  Multi bvalue:Tsk109: }
+14-Jul-17 18:38:54.656 INFO: UIOp: New task added to session: {MRAC:Tsk110: }
+14-Jul-17 18:38:55.567 INFO: UIOp: New task added to session: {}
+14-Jul-17 18:39:34.409 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:39:43.834 INFO: UIOp: New task added to session: {Bed 1       (04:00)}
+14-Jul-17 18:39:43.925 INFO: UIOp: New task added to session: {MRAC 1:Tsk111: }
+14-Jul-17 18:39:43.926 INFO: UIOp: New task added to session: {Cor T2 STIR 1-2:Tsk112: }
+14-Jul-17 18:39:43.926 INFO: UIOp: New task added to session: {Cor LAVA-Flex 1-2:Tsk113: }
+14-Jul-17 18:39:43.926 INFO: UIOp: New task added to session: {Ax DWI-1 multi b:Tsk114: }
+14-Jul-17 18:39:44.125 INFO: UIOp: New task added to session: {MRAC:Tsk115: }
+14-Jul-17 18:39:45.085 INFO: UIOp: New task added to session: {Bed 2       (03:00)}
+14-Jul-17 18:39:45.184 INFO: UIOp: New task added to session: {MRAC 2:Tsk116: }
+14-Jul-17 18:39:45.184 INFO: UIOp: New task added to session: {Ax DWI-2 Multi bvalue:Tsk117: }
+14-Jul-17 18:39:45.184 INFO: UIOp: New task added to session: {Ax DWI-3 Multi bvalue:Tsk118: }
+14-Jul-17 18:39:45.350 INFO: UIOp: New task added to session: {MRAC:Tsk119: }
+14-Jul-17 18:39:46.333 INFO: UIOp: New task added to session: {Bed 3}
+14-Jul-17 18:39:46.422 INFO: UIOp: New task added to session: {MRAC 3:Tsk120: }
+14-Jul-17 18:39:46.422 INFO: UIOp: New task added to session: {Cor T2 STIR RT 3-4:Tsk121: }
+14-Jul-17 18:39:46.422 INFO: UIOp: New task added to session: {Cor LAVA-Flex  3-4 BH:Tsk122: }
+14-Jul-17 18:39:46.422 INFO: UIOp: New task added to session: {Ax DWI-4  Multi bvalue:Tsk123: }
+14-Jul-17 18:39:46.584 INFO: UIOp: New task added to session: {MRAC:Tsk124: }
+14-Jul-17 18:39:47.500 INFO: UIOp: New task added to session: {Bed 4}
+14-Jul-17 18:39:47.591 INFO: UIOp: New task added to session: {MRAC 4:Tsk125: }
+14-Jul-17 18:39:47.750 INFO: UIOp: New task added to session: {MRAC:Tsk126: }
+14-Jul-17 18:39:48.851 INFO: UIOp: New task added to session: {Bed 5       (04:00)}
+14-Jul-17 18:39:48.945 INFO: UIOp: New task added to session: {MRAC 5:Tsk127: }
+14-Jul-17 18:39:48.945 INFO: UIOp: New task added to session: {Cor T2 STIR 5-6:Tsk128: }
+14-Jul-17 18:39:48.945 INFO: UIOp: New task added to session: {Cor LAVA-Flex 5-6:Tsk129: }
+14-Jul-17 18:39:48.945 INFO: UIOp: New task added to session: {Ax DWI-5  Multi bvalue:Tsk130: }
+14-Jul-17 18:39:49.111 INFO: UIOp: New task added to session: {MRAC:Tsk131: }
+14-Jul-17 18:39:50.075 INFO: UIOp: New task added to session: {Bed 6}
+14-Jul-17 18:39:50.178 INFO: UIOp: New task added to session: {MRAC 6:Tsk132: }
+14-Jul-17 18:39:50.178 INFO: UIOp: New task added to session: {Ax DWI-6  Multi bvalue:Tsk133: }
+14-Jul-17 18:39:50.370 INFO: UIOp: New task added to session: {MRAC:Tsk134: }
+14-Jul-17 18:39:51.295 INFO: UIOp: New task added to session: {}
+14-Jul-17 18:40:32.278 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:40:32.278 INFO: UIOp: User selected task (Cor T2 STIR 1-2) [row=6] {Cor T2 STIR 1-2:Tsk112: }
+14-Jul-17 18:40:33.538 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:40:42.282 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:40:42.282 INFO: UIOp: User selected task (Cor LAVA-Flex 1-2) [row=7] {Cor LAVA-Flex 1-2:Tsk113: }
+14-Jul-17 18:40:45.133 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:40:48.876 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:40:51.384 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:40:53.470 INFO: UIOp: User requested MoveDownBed action.
+14-Jul-17 18:40:53.764 INFO: UIOp: New task added to session: {Cor LAVA-Flex 1-2:Tsk135: }
+14-Jul-17 18:41:22.387 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:41:22.387 INFO: UIOp: User selected task (Cor LAVA-Flex 1-2) [row=12] {Cor LAVA-Flex 1-2:Tsk135: }
+14-Jul-17 18:41:41.873 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:41:41.873 INFO: UIOp: User selected task (Cor T2 STIR RT 3-4) [row=15] {Cor T2 STIR RT 3-4:Tsk121: }
+14-Jul-17 18:41:41.974 INFO: UIOp:   Row was double clicked.
+14-Jul-17 18:41:45.529 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:41:45.529 INFO: UIOp: User selected task (Cor LAVA-Flex  3-4 BH) [row=16] {Cor LAVA-Flex  3-4 BH:Tsk122: }
+14-Jul-17 18:41:45.664 INFO: UIOp:   Row was double clicked.
+14-Jul-17 18:41:50.610 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:41:50.610 INFO: UIOp: User selected task (Ax DWI-4  Multi bvalue) [row=17] {Ax DWI-4  Multi bvalue:Tsk123: }
+14-Jul-17 18:41:51.092 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:41:53.442 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:41:53.443 INFO: UIOp: User selected task (Cor LAVA-Flex  3-4 BH) [row=16] {Cor LAVA-Flex  3-4 BH:Tsk122: }
+14-Jul-17 18:41:54.161 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:41:55.999 INFO: UIOp: User requested MoveUpBed action.
+14-Jul-17 18:41:56.290 INFO: UIOp: New task added to session: {Cor LAVA-Flex  3-4 BH:Tsk136: }
+14-Jul-17 18:42:01.776 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:42:01.776 INFO: UIOp: User selected task (Cor LAVA-Flex  3-4 BH) [row=13] {Cor LAVA-Flex  3-4 BH:Tsk136: }
+14-Jul-17 18:42:01.781 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:42:03.196 INFO: UIOp: User requested MoveDownBed action.
+14-Jul-17 18:42:03.384 INFO: UIOp: New task added to session: {Cor LAVA-Flex  3-4 BH:Tsk137: }
+14-Jul-17 18:42:07.895 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:42:07.895 INFO: UIOp: User selected task (Cor T2 STIR 5-6) [row=22] {Cor T2 STIR 5-6:Tsk128: }
+14-Jul-17 18:42:09.515 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:42:17.896 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:42:19.070 INFO: UIOp: User requested MoveUpBed action.
+14-Jul-17 18:42:19.263 INFO: UIOp: New task added to session: {Cor T2 STIR 5-6:Tsk138: }
+14-Jul-17 18:42:21.936 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:42:21.936 INFO: UIOp: User selected task (Cor T2 STIR 5-6) [row=20] {Cor T2 STIR 5-6:Tsk138: }
+14-Jul-17 18:42:30.724 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:42:33.028 INFO: UIOp: User requested MoveUpBed action.
+14-Jul-17 18:42:33.213 INFO: UIOp: New task added to session: {Cor T2 STIR 5-6:Tsk139: }
+14-Jul-17 18:42:37.619 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:42:37.620 INFO: UIOp: User selected task (Cor T2 STIR 5-6) [row=18] {Cor T2 STIR 5-6:Tsk139: }
+14-Jul-17 18:42:37.779 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:42:43.992 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:42:45.093 INFO: UIOp: User requested MoveUp action.
+14-Jul-17 18:42:47.332 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:42:48.469 INFO: UIOp: User requested MoveUpBed action.
+14-Jul-17 18:42:48.653 INFO: UIOp: New task added to session: {Cor T2 STIR 5-6:Tsk140: }
+14-Jul-17 18:42:51.692 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:42:53.298 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:42:53.298 INFO: UIOp: User selected task (Cor T2 STIR 5-6) [row=13] {Cor T2 STIR 5-6:Tsk140: }
+14-Jul-17 18:42:53.645 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:42:55.189 INFO: UIOp: User requested MoveDownBed action.
+14-Jul-17 18:42:55.373 INFO: UIOp: New task added to session: {Cor T2 STIR 5-6:Tsk141: }
+14-Jul-17 18:42:58.011 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:42:58.011 INFO: UIOp: User selected task (Cor T2 STIR 5-6) [row=18] {Cor T2 STIR 5-6:Tsk141: }
+14-Jul-17 18:42:58.825 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:43:00.560 INFO: UIOp: User requested MoveDownBed action.
+14-Jul-17 18:43:00.746 INFO: UIOp: New task added to session: {Cor T2 STIR 5-6:Tsk142: }
+14-Jul-17 18:43:04.435 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:43:04.436 INFO: UIOp: User selected task (Cor T2 STIR 5-6) [row=20] {Cor T2 STIR 5-6:Tsk142: }
+14-Jul-17 18:43:05.307 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:43:08.448 INFO: UIOp: User requested MoveDownBed action.
+14-Jul-17 18:43:08.638 INFO: UIOp: New task added to session: {Cor T2 STIR 5-6:Tsk143: }
+14-Jul-17 18:43:11.548 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:43:11.548 INFO: UIOp: User selected task (Cor T2 STIR 5-6) [row=24] {Cor T2 STIR 5-6:Tsk143: }
+14-Jul-17 18:43:14.845 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:43:14.845 INFO: UIOp: User selected task (Cor LAVA-Flex  3-4 BH) [row=17] {Cor LAVA-Flex  3-4 BH:Tsk137: }
+14-Jul-17 18:43:16.254 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:43:16.255 INFO: UIOp: User selected task (Ax DWI-4  Multi bvalue) [row=16] {Ax DWI-4  Multi bvalue:Tsk123: }
+14-Jul-17 18:43:16.470 INFO: UIOp:   Row was double clicked.
+14-Jul-17 18:43:40.715 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:43:44.564 INFO: UIOp: User requested MoveDownBed action.
+14-Jul-17 18:43:44.803 INFO: UIOp: New task added to session: {Ax DWI-4  Multi bvalue:Tsk144: }
+14-Jul-17 18:43:49.124 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:43:49.125 INFO: UIOp: User selected task (Ax DWI-4  Multi bvalue) [row=19] {Ax DWI-4  Multi bvalue:Tsk144: }
+14-Jul-17 18:43:49.168 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:43:50.857 INFO: UIOp: User requested MoveDownBed action.
+14-Jul-17 18:43:51.056 INFO: UIOp: New task added to session: {Ax DWI-4  Multi bvalue:Tsk145: }
+14-Jul-17 18:43:59.147 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:43:59.147 INFO: UIOp: User selected task (PET Task    (23:00)) [row=3] {PET Task}
+14-Jul-17 18:43:59.291 INFO: UIOp:   Row was double clicked.
+14-Jul-17 18:44:11.022 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:44:11.022 INFO: UIOp: User selected task (Cor T2 STIR 1-2) [row=6] {Cor T2 STIR 1-2:Tsk112: }
+14-Jul-17 18:44:20.014 INFO: UIOp: User requested AddTask action.
+14-Jul-17 18:44:21.004 INFO: UIOp: User requested AddSequence action.
+14-Jul-17 18:44:32.189 INFO: UIOp: New task added to session: {Sag T1 FLAIR:Tsk146: }
+14-Jul-17 18:44:36.725 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:44:36.725 INFO: UIOp: User selected task (Sag T1 FLAIR) [row=29] {Sag T1 FLAIR:Tsk146: }
+14-Jul-17 18:44:38.414 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:44:38.414 INFO: UIOp: User selected task (Bed 6) [row=25] {Bed 6}
+14-Jul-17 18:44:38.414 INFO: UIOp: User selected task (Sag T1 FLAIR) [row=29] {Sag T1 FLAIR:Tsk146: }
+14-Jul-17 18:44:38.894 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:44:40.326 INFO: UIOp: User requested MakeSimultaneous action.
+14-Jul-17 18:44:40.463 INFO: UIOp: New task added to session: {Sag T1 FLAIR:Tsk147: }
+14-Jul-17 18:44:42.086 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:44:42.086 INFO: UIOp: User selected task (Sag T1 FLAIR) [row=28] {Sag T1 FLAIR:Tsk147: }
+14-Jul-17 18:44:42.851 INFO: UIOp: User requested Setup action.
+14-Jul-17 18:44:53.432 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:44:55.391 INFO: UIOp: User requested Duplicate action.
+14-Jul-17 18:45:00.961 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:45:04.878 INFO: UIOp: User requested Duplicate action.
+14-Jul-17 18:45:15.970 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:45:20.992 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:45:28.664 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:45:30.095 INFO: UIOp: User requested Duplicate action.
+14-Jul-17 18:46:15.789 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:46:15.791 INFO: UIOp: User performed right click on Task List.
+14-Jul-17 18:46:17.631 INFO: UIOp: User requested Duplicate action.
+14-Jul-17 18:48:41.399 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:48:41.399 INFO: UIOp: User selected task (PET Task    (23:00)) [row=3] {PET Task}
+14-Jul-17 18:48:41.402 INFO: UIOp: -------- new table selection ---------
+14-Jul-17 18:48:41.402 INFO: UIOp: User selected task (PET Task    (23:00)) [row=3] {PET Task
