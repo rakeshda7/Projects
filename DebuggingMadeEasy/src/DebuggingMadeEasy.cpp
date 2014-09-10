@@ -77,21 +77,19 @@ protected:
 		}
 	}
 
-	//Check if Second Word is valid time and if valid return
-	virtual string getTimeFromString(string line) {
-		istringstream is(line.c_str());
+	string getTimeFromString(string line) {
+		string time;
 
 		string tmp;
-		// Get Second Word
-		is >> tmp >> tmp;
+		istringstream is(line.c_str());
+		for(int i=0; i<getTimeTokenIndex(); i++) {
+			is >> tmp;
+		}
 
 		if(isValidTime(tmp)) {
-			return tmp;
+			time=tmp;
 		}
-		else {
-			string tmp;
-			return tmp;
-		}
+		return time;
 	}
 
 	string getSingleLine() {
@@ -111,42 +109,8 @@ protected:
 		return line;
 	}
 
-	//Add any line without time to the previous line with time
-	virtual string getCompleLine() {
-		string resLine;
-
-		string tmpLine;
-		bool tmpLineHaveTime=false;
-		while(true) {
-			tmpLine=getSingleLine();
-
-			//Trim any white space
-			tmpLine=trim(tmpLine);
-
-			//No line exists
-			if(tmpLine.size()==0) {
-				if(eofReceived) {
-					break;
-				}
-				////Empty line received, Ignore
-			}
-			//Have atleast one line with time
-			else if(getTimeFromString(tmpLine).size()>0 && !tmpLineHaveTime) {
-				tmpLineHaveTime=true;
-				resLine = tmpLine;
-			}
-			//Second line with time received
-			else if(getTimeFromString(tmpLine).size()>0){
-				nextLine=tmpLine;
-				break;
-			}
-			//Line without time received
-			else {
-				resLine = resLine +"\n"+ tmpLine;
-			}
-		}
-		return resLine;
-	}
+	virtual int getTimeTokenIndex() = 0;
+	virtual string getCompleLine() =0;
 
 public:
 	AbstractLogFile(string name) {
@@ -192,21 +156,8 @@ class scnLogFile: public AbstractLogFile
 {
 protected:
 
-	//Check if First Word is valid time and if valid return
-	string getTimeFromString(string line) {
-		istringstream is(line.c_str());
-
-		string tmp;
-		// Get Second Word
-		is >> tmp;
-
-		if(isValidTime(tmp)) {
-			return tmp;
-		}
-		else {
-			string tmp;
-			return tmp;
-		}
+	int getTimeTokenIndex() {
+		return 1;
 	}
 
 	//Assume each line have time
@@ -244,6 +195,49 @@ public:
 //Interface for log file
 class wfmLogFile: public AbstractLogFile
 {
+protected:
+
+	int getTimeTokenIndex() {
+		return 2;
+	}
+
+	//Add any line without time to the previous line with time
+	string getCompleLine() {
+		string resLine;
+
+		string tmpLine;
+		bool tmpLineHaveTime=false;
+		while(true) {
+			tmpLine=getSingleLine();
+
+			//Trim any white space
+			tmpLine=trim(tmpLine);
+
+			//No line exists
+			if(tmpLine.size()==0) {
+				if(eofReceived) {
+					break;
+				}
+				////Empty line received, Ignore
+			}
+			//Have atleast one line with time
+			else if(getTimeFromString(tmpLine).size()>0 && !tmpLineHaveTime) {
+				tmpLineHaveTime=true;
+				resLine = tmpLine;
+			}
+			//Second line with time received
+			else if(getTimeFromString(tmpLine).size()>0){
+				nextLine=tmpLine;
+				break;
+			}
+			//Line without time received
+			else {
+				resLine = resLine +"\n"+ tmpLine;
+			}
+		}
+		return resLine;
+	}
+
 public:
 	wfmLogFile(string name): AbstractLogFile(name) {}
 };
@@ -253,6 +247,17 @@ public:
 //Interface for log file
 class gslLogFile: public AbstractLogFile
 {
+protected:
+	int getTimeTokenIndex() {
+		return 1;
+	}
+
+	//Assume each line have time
+	string getCompleLine() {
+		string line;
+		return line;
+	}
+
 public:
 	gslLogFile(string name): AbstractLogFile(name) {}
 };
